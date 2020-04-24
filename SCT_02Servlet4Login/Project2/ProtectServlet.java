@@ -17,7 +17,7 @@ public class ProtectServlet extends HttpServlet {
             for (Cookie c : cs) {
                 String name = c.getName();
                 String value = c.getValue();
-                if(name.equals("zhangxu")&&value.equals("123456")){
+                if(name.equals("xucheng")&&value.equals("123456")){
                     pw.write("<html lang=\"en\">\n" +
                             "<head>\n" +
                             "    <meta charset=\"UTF-8\">\n" +
@@ -25,7 +25,7 @@ public class ProtectServlet extends HttpServlet {
                             "</head>\n" +
                             "<body>\n" +
                             "    <h1>登录受保护页面</h1>\n" +
-                            "    <h3>欢迎zhangxu访问本系统<a href=\"logoutservlet\">【注销】</a></h3>\n" +
+                            "    <h3>欢迎xucheng访问本系统<a href=\"logoutservlet\">【注销】</a></h3>\n" +
                             "</body>\n" +
                             "</html>");
                     return;
@@ -39,7 +39,7 @@ public class ProtectServlet extends HttpServlet {
                 "</head>\n" +
                 "<body>\n" +
                 "    <h1>您还未登录，无法访问登录受保护页面</h1>\n" +
-                "    <h3>请先<a href=\"/stu74/login.html\">登录</a></h3>\n" +
+                "    <h3>请先<a href=\"/stu57/login.html\">登录</a></h3>\n" +
                 "</body>\n" +
                 "</html>");
     }

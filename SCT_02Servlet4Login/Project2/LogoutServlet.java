@@ -14,11 +14,11 @@ public class LogoutServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         PrintWriter pw = response.getWriter();
 
-        Cookie ck = new Cookie("zhangxu", "123456");
+        Cookie ck = new Cookie("xucheng", "123456");
         ck.setMaxAge(0);
         response.addCookie(ck);
 
-        response.sendRedirect("/stu74/login.html");
+        response.sendRedirect("/stu57/login.html");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
