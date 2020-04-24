@@ -15,9 +15,9 @@ public class LoginServlet extends HttpServlet {
         if("xucheng".equals(username)&&"123456".equals(password)){
             Cookie c = new Cookie(username, password);
             response.addCookie(c);
-            response.sendRedirect("/stu57/protect");
+            response.sendRedirect("/stu74/protect");
         }else{
-            response.sendRedirect("/stu57/loginlose.html");
+            response.sendRedirect("/stu74/loginlose.html");
         }
     }
 
